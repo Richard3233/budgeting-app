@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input, button {
+  margin: 10px 0;
+}
+
+/* Expense Fields */
+.expense {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.expense.fade-out {
+  opacity: 0;
+  transform: translateX(-50px);
+  pointer-events: none;
+}
+
+.expense input[type="text"],
+.expense input[type="number"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Add Expense Button */
+#addExpenseButton {
+  margin-top: 10px;
+  padding: 10px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addExpenseButton:hover {
+  background: #218838;
+}
+
+/* Delete Expense Button */
+.deleteExpenseButton {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteExpenseButton:hover {
+  background-color: #c82333;
+}
+
+/* Results Section */
+#results {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+#results p {
+  margin: 5px 0;
+}
